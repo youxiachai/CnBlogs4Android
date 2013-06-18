@@ -1,0 +1,5 @@
+/gen
+/bin
+
+/libs/*.zip
+/libs/*.properties
