@@ -10,7 +10,7 @@ public interface Api {
 		public String PAGE = "page";
 		public String COUNT = "count";
 		public String ID = "id";
-		public String BOLGLISTTYPE = "bloglistype";
+		public String BLOGLISTTYPE = "bloglistype";
 	}
 	
 	public interface Path {

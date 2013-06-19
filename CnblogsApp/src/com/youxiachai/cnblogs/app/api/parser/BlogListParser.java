@@ -59,6 +59,18 @@ public class BlogListParser implements Transformer {
 				
 				blogItem.SetSummary(xmlDom.text(ENTRY_SUMMARY_TAG));
 				
+				//作者
+				String autor = xmlDom.tag("author").text("name");
+				blogItem.SetAuthor(autor);
+				
+				//头像
+				String face = xmlDom.tag("author").text("avatar");
+				blogItem.SetAvator(face);
+				
+				//发布时间
+				String date = xmlDom.text(ENTRY_UPDATED_TAG);
+				blogItem.SetUpdateTime(date);
+				
 				listBlog.add(blogItem);
 				
 			}

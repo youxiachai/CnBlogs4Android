@@ -26,7 +26,8 @@ public class ApiRequest {
 
 		// 类型转换
 		NewsListParser newsListParser = new NewsListParser();
-
+		
+		
 		// 设置类
 		NetOption no = new NetOption(ApiUrl.getNewsRecommend(dataMap), null);
 
@@ -71,7 +72,7 @@ public class ApiRequest {
 	public static void getBlogList(Bundle dataMap, AQuery req,
 			ICallback<BlogList> callback) {
 		BlogListType blogType = (BlogListType) dataMap
-				.getSerializable(Api.Key.BOLGLISTTYPE);
+				.getSerializable(Api.Key.BLOGLISTTYPE);
 		BlogListParser blogListParser = new BlogListParser();
 		// 设置类
 		NetOption no = new NetOption(ApiUrl.getBlogList(dataMap, blogType), blogType);

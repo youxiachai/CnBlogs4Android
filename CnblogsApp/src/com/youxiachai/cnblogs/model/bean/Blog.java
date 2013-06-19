@@ -16,7 +16,7 @@ public class Blog {
 	private String _authorUrl;
 	private String _blogContent;
 	private Date _addTime;
-	private Date _updateTime;
+	private String _updateTime;
 	private int _viewNum;
 	private int _commentNum;
 	private int _diggsNum;
@@ -64,10 +64,10 @@ public class Blog {
 	public Date GetAddTime(){
 		return _addTime;
 	}
-	public void SetUpdateTime(Date updateTime){
+	public void SetUpdateTime(String updateTime){
 		_updateTime=updateTime;
 	}
-	public Date GetUpdateTime(){
+	public String GetUpdateTime(){
 		return _updateTime;
 	}
 	public void SetViewNum(int viewNum){

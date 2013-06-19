@@ -13,6 +13,7 @@ dependencies {
     compile project(':E::ProjectGitHub:my:ActionTitlebar')
     compile project(':E::ProjectGitHub:my:XListView-all-Android')
     compile project(':E::ProjectGitHub:my:ajaxquery:Youxiachai-aquery-ajax')
+    compile project(':E::ProjectGitHub:other:SlidingMenu:library')
 }
 
 android {
