@@ -11,6 +11,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.IBinder;
 
+/**
+ * @author youxiachai
+ * @date   2013-6-19
+ */
 public class ApiService extends Service {
 	
 	AQuery req;

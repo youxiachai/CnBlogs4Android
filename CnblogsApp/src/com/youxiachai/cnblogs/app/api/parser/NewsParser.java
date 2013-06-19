@@ -7,6 +7,10 @@ import com.androidquery.callback.Transformer;
 import com.androidquery.util.XmlDom;
 import com.youxiachai.cnblogs.model.bean.News;
 
+/**
+ * @author youxiachai
+ * @date   2013-6-19
+ */
 public class NewsParser implements Transformer {
 	
 	final String ENTRY_TITLE_TAG = "Title";// 标题标记

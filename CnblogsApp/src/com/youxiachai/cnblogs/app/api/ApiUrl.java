@@ -14,18 +14,24 @@ public final class ApiUrl {
 	
 	
 	
+	/**根据blog 类型获取blog 列表
+	 * @param dataMap
+	 * @param blogType
+	 * @return
+	 */
 	public static String getBlogList(Bundle dataMap, BlogListType blogType){
 		switch (blogType) {
 		case normal:
 			
 			return getBlogNormal(dataMap);
-
 		case d10:
-			return getBlogTopD10(dataMap);
 			
+			return getBlogTopD10(dataMap);
 		case h48:
+
 			return getBlogTopH48(dataMap);
 		}
+		
 		return null;
 	}
 	

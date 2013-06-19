@@ -11,6 +11,10 @@ import com.androidquery.util.XmlDom;
 import com.youxiachai.cnblogs.model.api.NewsList;
 import com.youxiachai.cnblogs.model.bean.News;
 
+/**
+ * @author youxiachai
+ * @date   2013-6-19
+ */
 public class NewsListParser implements Transformer {
 	final String ENTRY_TAG = "entry";// 主标记
 	final String ENTRY_ID_TAG = "id";// 编号标记

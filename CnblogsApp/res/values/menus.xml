@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menuList">
+        <item>推荐新闻</item>
+        <item>10天内推荐新闻</item>
+        <item>48小时阅读排行</item>
+        <item>首页博客</item>
+    </string-array>
+
+</resources>

@@ -1,5 +1,9 @@
 package com.youxiachai.cnblogs.app.api;
 
+/**
+ * @author youxiachai
+ * @date   2013-6-19
+ */
 public interface Api {
 	
 	public interface Key {
