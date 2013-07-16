@@ -36,7 +36,7 @@ public class ApiRequest {
 
 		NetCallback<NewsList> ajaxCallback = new NetCallback<NewsList>(
 				NewsList.class, no, callback);
-
+//		ajaxCallback.co
 		req.transformer(newsListParser).ajax(ajaxCallback);
 
 	}
