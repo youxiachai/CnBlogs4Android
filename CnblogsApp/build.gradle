@@ -6,7 +6,7 @@ apply plugin: 'android'
 
 dependencies {
 	//compile fileTree(dir: 'libs', include: '*.jar')
-//	compile 'com.android.support:support-v4:13.0.0'
+	//	compile 'com.android.support:support-v4:13.0.0'
 	compile project(':my:ActionTitlebar')
 	compile project(':my:XListView-all-Android')
 	compile project(':my:ajaxquery:Youxiachai-aquery-ajax')
@@ -17,9 +17,9 @@ android {
 	compileSdkVersion 17
 	buildToolsVersion "17.0.0"
 	//dependencies { compile 'com.android.support:support-v4:13.0.0' }
-//	dependencies {
-//		compile 'com.android.support:support-v4:13.0.0'
-//	}
+	//	dependencies {
+	//		compile 'com.android.support:support-v4:13.0.0'
+	//	}
 	signingConfigs {
 		myConfig{
 			storeFile file("gradle.keystore")
@@ -30,6 +30,13 @@ android {
 	}
 	buildTypes{
 		release { signingConfig signingConfigs.myConfig }
+		playstore { signingConfig signingConfigs.myConfig }
+	}
+	
+	productFlavors {
+		playstore {
+			packageName='com.youxiachai.demo.playstore'
+		}
 	}
 
 
